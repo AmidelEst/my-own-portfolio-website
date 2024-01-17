@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Professional Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional Custom CSS -->
+
+</head>
+<body>
+
+<!-- nav bar-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Amit Pompas</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#carouselHeader" onclick="$('#carouselHeader').carousel(0)">Welcome</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#carouselHeader" onclick="$('#carouselHeader').carousel(1)">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#carouselHeader" onclick="$('#carouselHeader').carousel(2)">Projects & Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#carouselHeader" onclick="$('#carouselHeader').carousel(3)">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+<!-- Carousel Header -->
+<div id="carouselHeader" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="d-block w-100 bg-primary text-white text-center py-5">
+                <h1>Welcome to Amit Pompas Professional Page</h1>
+                <p>A third year Computer Science student with experience in full-stack development. I am eager to learn new skills and am constantly improving my self-learning skills.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="d-block w-100">
+                <!-- Skills Section -->
+                <section class="py-5">
+                    <div class="container">
+                        <h2 class="text-center">My Skills</h2>
+                        <div class="row">
+                            <!-- Skill 1 -->
+                            <div class="col-md-4">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Coding languages</h5>
+                                        <p class="card-text">Java, C, python, Sql</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Skill 2 -->
+                            <div class="col-md-4">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Team work</h5>
+                                        <p class="card-text">Description of Skill 2.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Skill 3 -->
+                            <div class="col-md-4">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Linux</h5>
+                                        <p class="card-text">Linux server.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more skills as needed -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="d-block w-100">
+                <!-- Projects section content -->
+                <section class="bg-light py-5">
+                    <div class="container">
+                        <h2 class="text-center">Projects & Experience</h2>
+                        <div class="row">
+                            <!-- Project/Experience 1 -->
+                            <div class="col-md-6">
+                                <div class="card mb-4">
+                                    <img class="card-img-top" src="./src/lunchpad.jpg" alt="Launchpad Project picture">
+                                    <div class="card-body">
+                                        <h5 class="card-title">launchpad-looper-C#</h5>
+                                        <p class="card-text">Built and designed a music-making "Looper" controller program using C#.</p>
+                                        <a href="https://github.com/AmidelEst/launchpad-looper-cSharp" class="btn btn-primary">More Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project/Experience 2 -->
+                            <div class="col-md-6">
+                                <div class="card mb-4">
+                                    <img class="card-img-top" src="./src/mins.jpg" alt="Project Image 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">mine_sweeper</h5>
+                                        <p class="card-text">Minesweeper is single-player logic-based computer game played on rectangular board whose object is to locate a predetermined number of randomly-placed "mines" in the shortest possible time by clicking on "safe" squares while avoiding the squares with mines.</p>
+                                        <a href="https://github.com/AmidelEst/mine_sweeper" class="btn btn-primary">More Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more projects/experiences as needed -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="d-block w-100">
+                <!-- Contact section content -->
+                <!-- Contact Section -->
+                <section class="py-5">
+                    <div class="container">
+                        <h2 class="text-center">Contact Me</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>Email:</h4>
+                                <p>amitpom14@gmail.com</p>
+                                <h4>Phone:</h4>
+                                <p>+972- 508292016</p>
+                                <!-- Add other contact methods if needed -->
+                            </div>
+                            <div class="col-md-6">
+                                <!-- Contact Form (optional) -->
+                                <form action="https://formspree.io/f/mayrnlga"
+                                      method="POST">
+                                    <div class="form-group">
+                                        <label for="name">Name:</label>
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message:</label>
+                                        <textarea class="form-control" name="message" id="message" rows="3" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+    $(document).
+    Ready(function() {
+        $(".navbar-nav .nav-link").click(function(e) {
+            e.preventDefault();
+            var index = $(this).parent().index() - 1; // Adjusting index to match carousel items
+            $('#carouselHeader').carousel(index);
+        });
+    });
+</script>
+
+</body>
+</html>
